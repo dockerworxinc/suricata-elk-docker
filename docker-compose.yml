@@ -38,7 +38,11 @@ services:
     depends_on:
       - elasticsearch
       
-   suricata:
-     build: suricata/
-     network_mode: host
+  suricata:
+    build: suricata/
+    network_mode: host
+    ports:
+      - "7200:7200"
+    depends_on:
+      - elasticsearch
      
