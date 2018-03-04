@@ -39,6 +39,6 @@ services:
       - elasticsearch
       
    suricata:
-     image: suricata
+     build: suricata/
      network_mode: host
      
