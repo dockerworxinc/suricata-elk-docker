@@ -2,17 +2,17 @@
 
 ## Running the below script
 
-ip link set eth0 multicast off
-ip link set eth0 promisc on
-ip link set eth0 up 
+ip link set eth0 multicast off<br>
+ip link set eth0 promisc on<br>
+ip link set eth0 up <br>
 
 ## Pull the required images
 
 ```
 docker pull ubuntu
-docker pull docker.elastic.co/elasticsearch/elasticsearch:6.1.1
-docker pull docker.elastic.co/kibana/kibana:6.1.1
-docker pull docker.elastic.co/logstash/logstash:6.1.1
+docker pull docker.elastic.co/elasticsearch/elasticsearch:6.1.1<br>
+docker pull docker.elastic.co/kibana/kibana:6.1.1<br>
+docker pull docker.elastic.co/logstash/logstash:6.1.1<br>
 ```
 
 ## Running Elasticsearch
