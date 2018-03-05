@@ -29,3 +29,19 @@ docker run -e ELASTICSEARCH_URL="http://localhost:9200" --hostname=kibana --name
 
 ## Running Logstash
 
+```
+git clone https://github.com/gradiuscypher/grIDS
+cd grIDS
+docker build -t logstash .
+docker run --hostname=logstash --name=logstash --network="host" -e "xpack.monitoring.elasticsearch.url=http://localhost:9200" -t logstash
+```
+
+## Running Suricata
+
+```
+cd ..
+cd suricata/
+docker build -t suricata .
+docker run --network=host --hostname=suricata --name=suricata -it suricata
+
+```
