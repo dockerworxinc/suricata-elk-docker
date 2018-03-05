@@ -10,9 +10,9 @@ ip link set eth0 up <br>
 
 ```
 docker pull ubuntu
-docker pull docker.elastic.co/elasticsearch/elasticsearch:6.1.1<br>
-docker pull docker.elastic.co/kibana/kibana:6.1.1<br>
-docker pull docker.elastic.co/logstash/logstash:6.1.1<br>
+docker pull docker.elastic.co/elasticsearch/elasticsearch:6.1.1
+docker pull docker.elastic.co/kibana/kibana:6.1.1
+docker pull docker.elastic.co/logstash/logstash:6.1.1
 ```
 
 ## Running Elasticsearch
